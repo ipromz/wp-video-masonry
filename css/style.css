@@ -1,0 +1,142 @@
+.masongry_grid {
+    width: 33%;
+    /*margin-bottom: 2px;*/
+}
+.masongry_grid.grid_twice_size {
+    width: 66%;
+}
+.masonry_vid video {
+    width: 100%;
+}
+.masonry_text {
+  /*  display: none;*/
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #37185A;
+    text-align: center;
+    /*padding-top: 20px;*/
+    opacity: 0.95;
+    transition: all 1s;
+    display: table;
+    height: 239px;
+
+}
+
+.masongry_grid.not_started {
+   /* filter: blur(1px);*/
+}
+
+.grid_twice_size .masonry_text {
+    height: 478px;
+    width: 101%;
+}  
+.state_show_overlay .masonry_text {
+    opacity: 0.7;
+    /*display: block;*/
+}
+
+.state_show_overlay .vid_p {
+    display: block;
+}
+
+.state_show_cta .masonry_text {
+    opacity: 0.7;
+}
+
+.masongry_grid.not_started .masonry_text .vid_cta {
+    display: none;
+}
+
+
+/*.masongry_grid.not_started .masonry_text {
+    display: block;
+    opacity: 0.8;
+}*/
+
+.vid_cta {
+    display: none;
+}
+
+.state_show_cta .vid_cta {
+    /* display: block; */
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 27px;
+    transition: 0.5s all;
+    display: block;
+    max-width: 70%;
+    margin: 0  auto;
+}
+
+.vid_cta:hover {
+    background: #fff;
+    color: #37185A;
+}
+.vid_p {
+    display: none;
+    font-size: 23px;
+
+}
+.state_show_cta .vid_p {
+    display: none;
+}
+
+.no_overlay .masonry_text{
+    display: none !important;
+}
+
+.masonry_text_inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.work_masonry {
+    margin-top: 30px;
+}
+.masonry_video * ,
+.masonry_video {
+    font-family: HN;
+} 
+
+@media only screen and (max-width: 1250px) {
+  .vid_p {
+        font-size: 17px;
+    }
+    .masonry_text {
+       height: 220px;
+    }
+    .grid_twice_size .masonry_text {
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .masongry_grid {
+        width: 48%;
+    }
+    .masongry_grid.grid_twice_size {
+        width: 48%;
+    .state_show_cta .vid_cta {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    /*.masonry_text {
+        display: none !important;
+    }*/
+    .masongry_grid {
+        width: 100%;
+    }
+    .masongry_grid.grid_twice_size {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .state_show_cta .vid_cta {
+        padding: 7px;
+    }
+}
